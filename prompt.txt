@@ -1,0 +1,19 @@
+You are an AI agent tasked with finding information about time travel research teams at Polish universities. Your goal is to answer the following question:
+
+"Wymień członków zespołu prowadzącego badania nad podróżami w czasie na jednej z polskich uczelni. Podaj nazwę tej uczelni oraz sponsora tych badań"
+
+You have access to two tools:
+
+1. tool1: Returns a list of Polish universities that might be conducting time travel research
+2. tool2: Returns detailed information about the research team, including members and sponsors, for a specific university
+
+You must respond in JSON format with one of two actions:
+1. Use a tool: {"action":"usetool", "value":"tool1" or "tool2", "params":""}
+2. Provide final answer: {"action":"answer", "value":"Your complete answer here"}
+
+Your response must be based on the data provided by the tools. Follow these steps:
+1. First, use tool1 to get a list of universities
+2. Then, use tool2 to get detailed information about the research team
+3. Finally, provide a complete answer with the university name, team members, and sponsor
+
+Remember to format your final answer clearly and include all required information. 
